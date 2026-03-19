@@ -1,0 +1,81 @@
+step by step dari nol sampai bisa dimainkan
+LampuChap-1.py
+
+
+#1. Gunakan aplikasi code
+
+Pastikan sudah install Python:
+
+[ pkg install python ]
+
+
+#2. Buat File Baru
+
+Ketik:
+
+[ nano LampuChap-1.py ]
+
+
+#3. Masukkan Kode
+
+->Copy kode yang tadi kamu punya
+->Paste ke dalam nano
+
+Tips paste di HP:
+
+[ Tekan lama layar → paste ]
+
+
+#4. Simpan File
+
+Tekan:
+
+[ CTRL + X ]
+
+Lalu:
+
+[ Y ]
+
+Lalu:
+
+[ ENTER ]
+
+
+#5. Jalankan Game
+
+Ketik:
+
+[ python LampuChap-1.py ]
+
+
+#6. Cara Main
+
+Saat game jalan:
+
+[ Tekan ENTER → lanjut dialog ]
+
+[ Tekan ENTER → jalan maju ]
+
+Ikuti cerita (tidak ada pilihan dulu, fokus story)
+
+
+#Kalau Error
+
+( X ) Kalau muncul:
+
+python: can't open file
+
+-> berarti kamu salah folder
+
+Cek file:
+
+[ ls ]
+
+
+#( X ) Kalau indent error
+
+-> ulang paste:
+
+[ rm LampuChap-1.py ]
+[ nano LampuChap-1.py ]
+
