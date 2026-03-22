@@ -117,3 +117,57 @@ N : "kamu sudah bangun ya.."
 
 N : "..."
 N : "jika sudah membaik, boleh ikut ibu?"
+
+#chapter-4
+
+Dingin malam menusuk kulit
+Seorang anak yang malang
+Berjalan menembus gelap malam
+Terang bulan menerangi jalan
+Dengan lampu redup
+Berusaha menerangi
+
+...
+
+*Disebuah pertigaan
+Tanpa melihat jalan*
+
+BUGHH!!
+
+*Tertabrak seseorang*
+
+...
+
+*Melihat orang tersebut
+Dengan perasaan malu
+Dan rasa bersalah*
+
+*Itu adalah anak seusianya*
+
+...
+
+N : "kamu gapapa?"
+P : "..." 
+N : *bingung*
+P : *bingung
+N : "kamu baik-baik saya?" 
+P : "..." 
+N : "kamu bisa berbicara?" 
+P : *terdiam.. sebelum mengangguk*
+N : "ohh.. begitu ya.." 
+
+*Rasa canggung diantara mereka*
+
+N ; "omong-omong.." 
+N : "kenalin aku Vino" 
+N : "kamu bisa panggil aku vin" 
+P : "..." 
+N : *merasa canggung*
+N : "nama mu?"
+P : *tidak menjawab*
+N : "baiklah.. akan ku panggil kamu.." 
+N : *berfikir dengan keras"
+N : "akan ku panggil.. Fai"
+F : *melihat Vin penuh penasaran*
+N : "bagaimana?"
+
