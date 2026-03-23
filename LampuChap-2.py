@@ -1,10 +1,8 @@
 import os
 import time
 
-# Ukuran map
 SIZE = 7
 
-# Map awal (7x7)
 map_grid = [
     ["#", "#", "#", "#", "#", "#", "#"],
     ["#", "P", ".", ".", ".", "I", "#"],
@@ -108,12 +106,10 @@ def game_loop():
         else:
             continue
 
-        # Event ketemu ibu
         if tile == "I" and not encountered:
             encountered = True
             story_encounter()
 
-        # Keluar rumah
         if tile == "D":
             clear()
             print("Kamu keluar dari rumah...\n")
@@ -122,7 +118,5 @@ def game_loop():
             print("== TO BE CONTINUED ==")
             break
 
-
-# RUN GAME
 story_intro()
 game_loop()
