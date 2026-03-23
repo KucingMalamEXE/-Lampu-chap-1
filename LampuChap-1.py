@@ -20,7 +20,6 @@ def draw_corridor(step):
     middle = [" "] * width
     middle[step] = "P"
 
-    # atas & bawah sederhana (tidak terlalu ramai)
     top = ["N"," ","N"," ","B"," ","N"," ","N"," ","N"," ","B"," ","N"," ","N"," ","N"," ","N"]
     bottom = ["N"," ","N"," ","N"," ","N"," ","B"," ","N"," ","N"," ","N"," ","B"," ","N"," ","N"]
 
@@ -37,7 +36,6 @@ def corridor_scene():
     delay("Dia berjalan menyusuri lorong sekolah...", 0.05)
     wait()
 
-    # jalan 3 langkah
     for i in range(3):
         draw_corridor(i + 2)
         delay("Langkah terasa berat...", 0.05)
@@ -71,7 +69,6 @@ def classroom_scene():
 
     print("=== KELAS ===\n")
 
-    # kelas sederhana, player di tengah
     print("N   N   N   N   N")
     print("N   N   N   N   N")
     print("N   N   P   N   N")
