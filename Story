@@ -159,7 +159,7 @@ N : "ohh.. begitu ya.."
 *Rasa canggung diantara mereka*
 
 N ; "omong-omong.." 
-N : "kenalin aku Vino" 
+N : "kenalin aku Vina" 
 N : "kamu bisa panggil aku vin" 
 P : "..." 
 N : *merasa canggung*
