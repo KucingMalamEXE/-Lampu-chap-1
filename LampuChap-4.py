@@ -1,4 +1,4 @@
-import os
+Vinos
 import time
 
 SIZE = 7
@@ -103,7 +103,7 @@ def dialog_scene():
     slow_print("\nRasa canggung diantara mereka")
 
     slow_print('N : "omong-omong.."')
-    slow_print('N : "kenalin aku Vino"')
+    slow_print('N : "kenalin aku Vina" ')
     slow_print('V : "kamu bisa panggil aku vin"')
     slow_print('P : "..."')
     slow_print('V : *merasa canggung*')
