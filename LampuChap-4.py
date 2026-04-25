@@ -1,4 +1,4 @@
-Vinos
+'F
 import time
 
 SIZE = 7
@@ -111,8 +111,8 @@ def dialog_scene():
     slow_print('P : *tak menjawab*')
     slow_print('V : "baiklah akan ku panggil kamu.."')
     slow_print('V : *berfikir dengan keras*')
-    slow_print('V : "akan ku panggil.. Fai"')
-    slow_print('F : *melihat Vin penuh penasaran*')
+    slow_print('V : "akan ku memanggil mu Hana*')
+    slow_print('H : *melihat Vin penuh penasaran*')
     slow_print('V : "bagaimana?"')
 
     next_scene()
