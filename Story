@@ -160,16 +160,16 @@ N : "ohh.. begitu ya.."
 
 N ; "omong-omong.." 
 N : "kenalin aku Vina" 
-N : "kamu bisa panggil aku vin" 
+V : "kamu bisa panggil aku vin" 
 P : "..." 
-N : *merasa canggung*
-N : "nama mu?"
+V : *merasa canggung*
+V : "nama mu?"
 P : *tidak menjawab*
-N : "baiklah.. akan ku panggil kamu.." 
-N : *berfikir dengan keras"
-N : "akan ku panggil.. Fai"
-F : *melihat Vin penuh penasaran*
-N : "bagaimana?"
+V : "baiklah.. akan ku panggil kamu.." 
+V : *berfikir dengan keras"
+V : "akan ku panggil.. Hana"
+H : *melihat Vin penuh penasaran*
+V : "bagaimana?"
 
 #chapter-5
 
