@@ -3,16 +3,15 @@ import os
 
 SIZE = 7
 
-# posisi karakter
 hana_pos = [3, 1]
 vina_pos = [3, 2]
 npc_pos  = [3, 5]
-aku_pos  = [5, 5]   # "seseorang" di akhir
+aku_pos  = [5, 5]  
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
-def delay(text, speed=0.045):
+def delay(text, speed=1):
     for c in text:
         print(c, end="", flush=True)
         time.sleep(speed)
@@ -20,10 +19,6 @@ def delay(text, speed=0.045):
 
 def wait():
     input("\n[ENTER untuk lanjut]...")
-
-# ─────────────────────────────────────────────
-# GRID HELPERS
-# ─────────────────────────────────────────────
 
 def make_grid(markers: dict) -> list:
     """markers = { (row,col): char }"""
@@ -45,10 +40,6 @@ def show_scene(markers, legend="H=Hana  V=Vina", title="MALAM"):
     print(f"=== {title} ===\n")
     print_grid(make_grid(markers), legend)
 
-# ─────────────────────────────────────────────
-# GERAK KARAKTER
-# ─────────────────────────────────────────────
-
 def walk_together(steps=1, direction="right",
                   extra_markers=None, legend="H=Hana  V=Vina", title="BERJALAN"):
     """Animasi dua karakter berjalan bersama."""
@@ -63,11 +54,7 @@ def walk_together(steps=1, direction="right",
         if extra_markers:
             m.update(extra_markers)
         show_scene(m, legend, title)
-        time.sleep(0.7)
-
-# ─────────────────────────────────────────────
-# SCENE 1 – PERTEMUAN DI MALAM HARI
-# ─────────────────────────────────────────────
+        time.ssleep(0.7)
 
 def scene_pertemuan():
     hana_pos[:] = [3, 1]
@@ -105,10 +92,6 @@ def scene_pertemuan():
 
     wait()
 
-# ─────────────────────────────────────────────
-# SCENE 2 – MINIMARKET
-# ─────────────────────────────────────────────
-
 def scene_minimarket():
     hana_pos[:] = [3, 1]
     vina_pos[:] = [3, 2]
@@ -117,7 +100,6 @@ def scene_minimarket():
     delay("Perjalanan dipenuhi rasa canggung, tanpa pembicaraan apapun...")
     wait()
 
-    # animasi jalan ke kanan menuju minimarket
     walk_together(3, "right",
                   extra_markers={(npc_pos[0], npc_pos[1]): "N"},
                   legend="H=Hana  V=Vina  N=Kasir",
@@ -169,10 +151,6 @@ def scene_minimarket():
 
     wait()
 
-# ─────────────────────────────────────────────
-# SCENE 3 – VINA MENYADARI
-# ─────────────────────────────────────────────
-
 def scene_sadar():
     hana_pos[:] = [3, 4]
     vina_pos[:] = [3, 2]
@@ -183,7 +161,6 @@ def scene_sadar():
     delay("Vina berjalan pergi...")
     delay("Hingga sadar Hana tidak mengikutinya...")
 
-    # Vina berbalik
     time.sleep(1)
     show_scene({tuple(hana_pos): "H", tuple(vina_pos): "V"},
                title="JALAN — MALAM")
@@ -197,17 +174,12 @@ def scene_sadar():
     delay("\nTeriakan Vina membuat Hana tersadar...")
     delay("Hana berlari menghampiri Vina...")
 
-    # Hana berlari ke posisi Vina
     for _ in range(2):
         hana_pos[1] -= 1
         show_scene({tuple(hana_pos): "H", tuple(vina_pos): "V"}, title="BERLARI")
         time.sleep(0.5)
 
-    wait()
-
-# ─────────────────────────────────────────────
-# SCENE 4 – PERCAKAPAN DI JALAN
-# ─────────────────────────────────────────────
+    waitt()
 
 def scene_jalan_pulang():
     hana_pos[:] = [3, 2]
@@ -286,7 +258,6 @@ def scene_perpisahan():
     delay("Rasa canggung tak kunjung menghilang...")
     wait()
 
-    # kembali ke posisi awal (tempat pertama bertemu)
     hana_pos[:] = [3, 1]
     vina_pos[:] = [3, 2]
 
@@ -335,7 +306,6 @@ def scene_perpisahan():
     delay("Vina menghilang tanpa sempat bereaksi...")
     time.sleep(1)
 
-    # Vina pergi (bergerak menjauh)
     for _ in range(3):
         vina_pos[1] += 1
         vina_pos[1] = min(SIZE-1, vina_pos[1])
@@ -347,10 +317,6 @@ def scene_perpisahan():
     print('H : *Berjalan pergi menuju rumahnya*')
 
     wait()
-
-# ─────────────────────────────────────────────
-# SCENE 6 – DEPAN PINTU RUMAH
-# ─────────────────────────────────────────────
 
 def scene_rumah():
     hana_pos[:] = [3, 2]
@@ -376,7 +342,6 @@ def scene_rumah():
     delay("Sudah terdengar suara ricuh dari dalam...")
     time.sleep(1)
 
-    # pintu dibuka — I muncul
     show_scene({tuple(hana_pos): "H",
                 tuple(aku_pos_local): "I"},
                legend="H=Hana  I=Seseorang",
@@ -396,19 +361,8 @@ def scene_rumah():
 
     wait()
 
-# ─────────────────────────────────────────────
-# MAIN
-# ─────────────────────────────────────────────
-
 def main():
     clear()
-    print("=" * 40)
-    delay("  ✦  MALAM YANG TERLALU TENANG  ✦")
-    print("=" * 40)
-    delay("\n  Sebuah cerita tentang dua orang asing")
-    delay("  yang bertemu di keheningan malam...\n")
-    wait()
-
     scene_pertemuan()
     scene_minimarket()
     scene_sadar()
